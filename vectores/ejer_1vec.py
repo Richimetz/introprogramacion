@@ -1,12 +1,9 @@
-n = int(input("número que quieres sacar el factorial: "))
-FACT = []
-for i in range (1,20+1):
-    sust = str(i) + "!"
-    FACT.append(sust)
-print(FACT)
+def impAsteriscos(numero):
+    print("Para:",numero)
+    for i in range(1,numero+1):
+        print("*",end="")
+    print("")
 
-lol = 1
-while n > 1:
-    lol = n * lol
-    n = n-1
-    print("el factrial de", n, "es", lol)
+
+for n in range(1,21):
+    impAsteriscos(n)
